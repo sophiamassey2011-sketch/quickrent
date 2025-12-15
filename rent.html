@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickRent — Rent Car</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f17;
+      --card: #171722;
+      --accent: #5b7aff;
+      --accent2: #ff4d6d;
+      --text: #f2f2f7;
+      --radius: 16px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15, 15, 23, 0.9);
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1rem;
+      opacity: 0.8;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      opacity: 1;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 4rem auto;
+      background: var(--card);
+      padding: 2rem;
+      border-radius: var(--radius);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, select, textarea {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border-radius: var(--radius);
+      border: none;
+      background: #25252d;
+      color: var(--text);
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    button:hover {
+      background: var(--accent2);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">QuickRent</a>
+  <nav>
+    <a href="web5.html">Home</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Rent Your Car</h1>
+  <form>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="John Doe" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="john@example.com" required>
+
+    <label for="car">Select Car</label>
+    <select id="car">
+      <option>Sport Coupe - $89/day</option>
+      <option>Comfort Sedan - $55/day</option>
+      <option>White Rolls-Royce SUV - $250/day</option>
+    </select>
+
+    <label for="date">Pick-up Date</label>
+    <input type="date" id="date">
+
+    <label for="notes">Additional Notes</label>
+    <textarea id="notes" rows="4" placeholder="Any special requests..."></textarea>
+
+    <button type="submit">Confirm Rental</button>
+  </form>
+</main>
+
+<footer>© 2025 QuickRent — All Rights Reserved</footer>
+
+</body>
+</html>
